@@ -40,7 +40,7 @@ ul.horizontal {
 
 #header-top-right {
   position: relative;
-  bottom: 0.1em;
+  bottom: 0.5em;
 }
 
 
@@ -75,23 +75,9 @@ header {
   margin:0;
 }
 
-#play{
-  position: relative;
-  background-color: transparent;
-  padding: 0px;
-  margin: 0px;
-  border: none;
-  cursor:pointer;
-  float:left;
-  background: url("img/pause.png") round ;
-  height: 18px;
-  width: 18px;
-  bottom: 6px;
-  left: 8px;
-}
+
 
 #googlesearch{
-  float:right;
   position: relative;
   top: 30px;
 }
@@ -104,7 +90,7 @@ background-color: #54585A;
 }
 
 #txt{
-  position: absolute;
+  position: fixed;
   float: left;
   width: 100%;
   max-width: 1520px;
@@ -145,6 +131,7 @@ footer
   float:left;
   padding-top: 10px;
   padding-left: 10px;
+  padding-bottom: 100%;
   background-color: #D6EAF8;
 }
 
@@ -171,15 +158,3 @@ h1.stroke {
 .leftlist:visited {color: #00FF00}
 .leftlist:hover {color: #FF69B4}
 .leftlist:active {color: #0000FF}
-
-div.box {
-  text-align:center;
-  font-size: 45px;
-  width:42%;
-  max-width: 600px;
-  margin: 3%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #ffffcc;
-  box-shadow: 10px 10px 5px #888888;
-}

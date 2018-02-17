@@ -3,13 +3,9 @@
   <head>
     <link rel="stylesheet" type="text/css" href="mystyle.css" >
   </head>
-<body background="img/Background.jpg">
+<body background="./img/Background.jpg">
   <div id = "container">
     <div id = "page">
-      <audio id="myAudio" autoplay="autoplay" loop = "loop">
-        <source src="music/The Fellowship of the Ring Soundtrack-11-The Ring Goes South.ogg" type="audio/ogg" />
-        <source src="music/The Fellowship of the Ring Soundtrack-11-The Ring Goes South.mp3" type="audio/mpeg" />
-      </audio>
       <header>
         <div id = "header-top">
           <div id = "header-top-right">
@@ -22,13 +18,12 @@
                 </li>
               </ul>
           </div>
-          <div id = "play" onclick="playAudio()"></div>
         </div>
         <div id = "header-middle">
             <a href = "./index.html" title = "home" ><img src="./img/logo.png"/> </a>
             <form id = "googlesearch" class = "right" method="get" action="https://www.google.ca/search?q=" target="_blank">
               Search Google:
-                <input type="text" name="q" maxlength="255" placeholder="Search in Google">
+                <input type="text" name="q" maxlength="255" placeholder="Search in the site">
                 <input type = "submit", value="Search">
             </form>
         </div>
@@ -44,11 +39,12 @@
         </div>
       </header>
         <div id = "txt">
-          <h1 class ="stroke" style="text-align:center; font-size:200px; color: white;"> Welcome to GavGard! </h1>
+          <div id = "box1" class = "box">
+            <a href = "#" title = "t1"> test 1</a>
         </div>
       </div>
       <footer>©Gavgard 2018 by Jiacheng Xu.</footer>
       </div>
-      <script src="js/myjs.js"></script>
-    </body>
-  </html>
+    </div>
+  </body>
+</html>

@@ -16,13 +16,17 @@
     document.getElementById("intr").innerHTML = "The background picture shows Constantinople, the 'queen of cities'.";
     }
     function future() {
-    document.getElementById("intr").innerHTML = "I am going to test some javascript code for this website. My plan is to make a sign up/log in system that allows people to leave messages on the website.";
+    document.getElementById("intr").innerHTML = "I am going to test some javascript code for this website. My plan is to make a sign up/log in system that allows people to leave messages on the website, which needs some knowledge about python or PHP.";
     }
     </script>
   </head>
 <body background="./img/Background.jpg">
   <div id = "container">
     <div id = "page">
+      <audio id="myAudio" autoplay="autoplay" loop = "loop">
+        <source src="music/The Fellowship of the Ring Soundtrack-11-The Ring Goes South.ogg" type="audio/ogg" />
+        <source src="music/The Fellowship of the Ring Soundtrack-11-The Ring Goes South.mp3" type="audio/mpeg" />
+      </audio>
       <header>
         <div id = "header-top">
           <div id = "header-top-right">
@@ -35,20 +39,21 @@
                 </li>
               </ul>
           </div>
+        <div id = "play" onclick="playAudio()"></div>
         </div>
         <div id = "header-middle">
             <a href = "./index.html" title = "home" ><img src="./img/logo.png"/> </a>
-            <form id = "googlesearch" class = "right">
+            <form id = "googlesearch" class = "right" method="get" action="https://www.google.ca/search?q=" target="_blank">
               Search Google:
-              <input type = "search", name = "goolesearch"/>
-              <input type = "submit", value="Search"/>
+                <input type="text" name="q" maxlength="255" placeholder="Search in the site">
+                <input type = "submit", value="Search">
             </form>
         </div>
         <div class = "header-middle">
         <div id = "header-bottom">
           <ul class = "horizontal">
             <li class = "bottomleft "><a href = "introduction.html" title = "INTRODUCTION"> INTRODUCTION </a> </li>
-            <li class = "bottomleft "><a href = "#" title = "JAVASCRIPT EXAMPLE"> JAVASCRIPT EXAMPLE </a></li>
+            <li class = "bottomleft "><a href = "JavascrpitTest.html" title = "JAVASCRIPT EXAMPLE"> JAVASCRIPT EXAMPLE </a></li>
             <li class = "bottomleft "><a href = "#" title = "NOTHING"> NOTHING </a></li>
             <li class = "bottomleft "><a href = "#" title = "TO BE CONTINUED"> TO BE CONTINUED </a></li>
             </ul>
@@ -72,5 +77,6 @@
       </div>
      <footer>©Gavgard 2018 by Jiacheng Xu.</footer>
    </div>
+      <script src="js/myjs.js"></script>
   </body>
 </html>
