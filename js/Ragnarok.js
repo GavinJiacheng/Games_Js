@@ -22,7 +22,7 @@ function checkaction(event)
     move (feet);
   }
   var a = thor.offsetLeft;
-  a-= 615;
+  a-=590;
   document.getElementById("demo").innerHTML="the coordinate is " + a;
 }
 
@@ -71,5 +71,5 @@ function move(feet){
     thor.src ="Ragnarok/viking/walking.gif";
     iswalking =1;
   }
-  thor.style.left =  (thor.offsetLeft - 655 +feet) +"px";
+  thor.style.left =  (thor.offsetLeft - 590 +feet) +"px";
 }
