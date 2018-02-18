@@ -3,9 +3,15 @@
   <head>
     <link rel="stylesheet" type="text/css" href="mystyle.css" >
   </head>
-<body background="./img/Background.jpg">
+
+
+<body background="img/Background.jpg" onkeydown = "checkaction(event)" onkeyup = "stopmoving(event)">
   <div id = "container">
     <div id = "page">
+      <audio id="myAudio" autoplay="autoplay" loop = "loop">
+        <source src="music/The Fellowship of the Ring Soundtrack-11-The Ring Goes South.ogg" type="audio/ogg" />
+        <source src="music/The Fellowship of the Ring Soundtrack-11-The Ring Goes South.mp3" type="audio/mpeg" />
+      </audio>
       <header>
         <div id = "header-top">
           <div id = "header-top-right">
@@ -18,12 +24,13 @@
                 </li>
               </ul>
           </div>
+          <div id = "play" onclick="playAudio()"></div>
         </div>
         <div id = "header-middle">
             <a href = "./index.html" title = "home" ><img src="./img/logo.png"/> </a>
             <form id = "googlesearch" class = "right" method="get" action="https://www.google.ca/search?q=" target="_blank">
               Search Google:
-                <input type="text" name="q" maxlength="255" placeholder="Search in the site">
+                <input type="text" name="q" maxlength="255" placeholder="Search in Google">
                 <input type = "submit", value="Search">
             </form>
         </div>
@@ -39,23 +46,17 @@
         </div>
       </header>
         <div id = "txt">
-          <div class = "box">
-            <a id = "box1" class = "jstest" title = "t1"> test 1: Smart Gavin</a>
-        </div>
-        <div  class = "box">
-          <a  id = "box2" class = "jstest" title = "t2"> test 2: Make a dynamic Thor</a>
-        </div>
-        <div  class = "box">
-          <a  id = "box3" class = "jstest" title = "t3"> test 3: To be continued, something about jQuery</a>
-        </div>
-        <div  class = "box">
-          <a  id = "box4" class = "jstest" title = "t4"> test 4: Nothing</a>
+          <div class = "gamebox"   >
+          <h2 style = "clear: left"> Ragnarok </h2>
+          <p> please press 'x' to attack, and press directiion keys to move! </p>
+            <img id = "Thor" src = "Ragnarok/viking/stance.gif"/>
+          <p id="demo"></p>
+          </div>
         </div>
       </div>
       <footer>©Gavgard 2018 by Jiacheng Xu.</footer>
       </div>
-    </div>
-    <script src="js/myjs.js"></script>
-    <script src="js/jstest.js"></script>
-  </body>
-</html>
+      <script src="js/myjs.js"></script>
+      <script src="js/Ragnarok.js"></script>
+    </body>
+  </html>

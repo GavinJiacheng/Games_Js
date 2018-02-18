@@ -40,7 +40,7 @@ ul.horizontal {
 
 #header-top-right {
   position: relative;
-  bottom: 0.1em;
+  bottom: 0.5em;
 }
 
 
@@ -173,13 +173,53 @@ h1.stroke {
 .leftlist:active {color: #0000FF}
 
 div.box {
+  float:left;
   text-align:center;
   font-size: 45px;
   width:42%;
   max-width: 600px;
+  max-height: 55px;
   margin: 3%;
+  margin-left: 6%;
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: #ffffcc;
   box-shadow: 10px 10px 5px #888888;
 }
+
+div.fullbox{
+  text-align:center;
+  font-size: 25px;
+  width:100%;
+  max-width: 1520px;
+  margin-top: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #ffffcc;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#Thor {
+  position: relative;
+  left:0px;
+  background-color:
+  transparent;
+  margin-top:200px;
+}
+
+div.gamebox {
+  text-align:center;
+  border:10px solid black;
+  height:800px;
+  width:auto;
+  background-color:lightblue;
+}
+
+.jstest
+{
+  color: Blue;
+  cursor:pointer;
+}
+
+.jstest:visited {color: purple}
+.jstest:hover {color: grey}
