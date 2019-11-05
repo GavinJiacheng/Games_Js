@@ -33,7 +33,7 @@ class Creature {
     turn()
     {
       var current = (0 + this.direction * 90);
-      document.getElementById(this.htmlID).style.webkitTransform = "rotateY("+current+"deg)";
+      document.getElementById(this.htmlID).style.webkitTransform = "rotateY("+current+"deg)";  // why we use document.getElementById(this.htmlID) here? because everytime when the html is changed, we need to use document.getElementById(this.htmlID) to reload this element.
       document.getElementById(this.htmlID).style.transform = "rotateY("+current+"deg)";
       document.getElementById(this.htmlID).style.moztransform = "rotateY("+current+"deg)";
       [this.direction, this.temp_direction] = [this.temp_direction, this.direction];
