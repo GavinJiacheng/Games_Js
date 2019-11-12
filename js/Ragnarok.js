@@ -33,7 +33,7 @@ class Creature {
     turn()
     {
       var current = (0 + this.direction * 90);
-      document.getElementById(this.htmlID).style.webkitTransform = "rotateY("+current+"deg)";  // why we use document.getElementById(this.htmlID) here? because everytime when the html is changed, we need to use document.getElementById(this.htmlID) to reload this element.
+      document.getElementById(this.htmlID).style.webkitTransform = "rotateY("+current+"deg)";
       document.getElementById(this.htmlID).style.transform = "rotateY("+current+"deg)";
       document.getElementById(this.htmlID).style.moztransform = "rotateY("+current+"deg)";
       [this.direction, this.temp_direction] = [this.temp_direction, this.direction];
@@ -102,6 +102,7 @@ class Creature {
           if (this.hp <= 0){
               document.getElementById(this.htmlID).src = this.dead;
               this.isDead = 1;
+              setTimeout(this.bind(this,this.real_die),500);
               setTimeout(this.bind(this,this.die),4000);
           }else{
             setTimeout(this.bind(this,this.resetBeAttacked),500);
@@ -131,6 +132,13 @@ class Creature {
               dead.parentNode.removeChild(dead);
               deadTrools.push(this.id);
               trolls.splice(trolls.indexOf(this),1);
+          }
+      }
+    }
+    real_die(){
+      if (this.species == "enemy"){
+          if (this.enemysSpecies == "Troll"){
+              document.getElementById(this.htmlID).src = this.dead100;
           }
       }
     }
@@ -179,6 +187,7 @@ class Troll extends Enemy {
        this.walking = "Ragnarok/troll/walking.gif";
        this.beAttacked = "Ragnarok/troll/attacked.gif";
        this.dead = "Ragnarok/troll/dead.gif";
+       this.dead100 = "Ragnarok/troll/100dead.png";
        var ramdomNumber = Math.random();
        this.direction = 2;
        if (ramdomNumber > 0.5){
