@@ -2,13 +2,15 @@
 The collection of JavaScript Games
 <br />
 
-Now I only showed the Ragnarok
+# Ragnarok
 <br />
-You can play it here:
+Click here to play Ragnarok :
 <br />
 https://jiachenggavin.github.io/Games_Js/
 <br />
-Here is the screenshots of moving, attacking and enemies death:
+Screenshots of character movement animation, character attacking animation and enemy death animation:
 ![Alt text](https://github.com/Jiachenggavin/Games_Js/blob/master/screenshot/move.png)
 ![Alt text](https://github.com/Jiachenggavin/Games_Js/blob/master/screenshot/attack.png)
 ![Alt text](https://github.com/Jiachenggavin/Games_Js/blob/master/screenshot/die.png)
+
+More games are planned to be added in the future.
